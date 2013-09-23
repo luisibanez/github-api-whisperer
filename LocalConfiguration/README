@@ -1,0 +1,7 @@
+Copy the accountCredentialsExample.json file into accountCredentials.json
+and edit its fields, placing your Github account information into it.
+
+The accountCredentials.json file is expected to be kept confidential, since
+it contains your login credentials for your Github account.
+
+Do not share the accountCredentials.json file.
