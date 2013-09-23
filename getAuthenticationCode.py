@@ -37,11 +37,10 @@ clientIdString='client_id='+clientID
 
 payload={'client_id':clientID,'redirect_uri':redirectURI,'scope':scopes,'state':state}
 
-url='https://github.com/login/oauth/authorize?'+clientIdString
+url='https://github.com/login/oauth/authorize'
 
-headers={'Content-Type':'application/json','Accept':'application/json'}
-
-r = requests.get(url,data=json.dumps(payload),headers=headers)
+r = requests.get(url,data=json.dumps(payload))
 
 print r
+print r.status_code
 
